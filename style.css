@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #171717;
+  color: #fafafa;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+}
+
+#whiteleaves {
+  background-image: url(images/kelly-sikkema-hSPVuakrJqs-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: .9;
+  width: 40vw;
+  height: 100vh;
+}
