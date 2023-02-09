@@ -1,14 +1,35 @@
+:root {
+  --bg: #171717;
+  --font: #fafafa;
+  --sec-bg: #262626;
+}
+
 * {
   margin: 0;
   padding: 0;
-  background-color: #171717;
-  color: #fafafa;
+  background-color: var(--bg);
+  color: var(--font);
 }
 
 body {
   display: flex;
   flex-direction: row;
+  font-family: Poppins;
 }
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 60vw;
+}
+
+header p,
+strong {
+  background-color: var(--sec-bg);
+}
+
+
 
 #whiteleaves {
   background-image: url(images/kelly-sikkema-hSPVuakrJqs-unsplash.jpg);
