@@ -2,41 +2,62 @@
   --bg: #171717;
   --font: #fafafa;
   --sec-bg: #262626;
+  --img-width: 35vw;
 }
 
 * {
   margin: 0;
   padding: 0;
-  background-color: var(--bg);
-  color: var(--font);
 }
 
 body {
   display: flex;
   flex-direction: row;
   font-family: Poppins;
+  max-height: 100vh;
+  max-width: 100vw;
+  background-color: var(--bg);
+  color: var(--font);
 }
-
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 60vw;
-}
-
-header p,
-strong {
-  background-color: var(--sec-bg);
-}
-
-
 
 #whiteleaves {
-  background-image: url(images/kelly-sikkema-hSPVuakrJqs-unsplash.jpg);
+  background: url(./images/kelly-sikkema-hSPVuakrJqs-unsplash.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   opacity: .9;
-  width: 40vw;
-  height: 100vh;
+  min-height: 100vh;
+  width: var(--img-width);
+}
+
+.logoContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 20vh;
+  background-color: #17171780;
+  padding: 10px;
+}
+
+#odinlogo {
+  width: 85px;
+}
+
+h1 {
+  font-family: Itim;
+}
+
+.credit {
+  position: absolute;
+  bottom: 2vh;
+  display: flex;
+  justify-content: center;
+  width: var(--img-width);
+  font-size: .85rem;
+}
+
+a:link,
+a:visited {
+  color: var(--font);
 }
