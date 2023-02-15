@@ -61,3 +61,19 @@ a:link,
 a:visited {
   color: var(--font);
 }
+
+header {
+  background-color: var(--sec-bg);
+  height: 18rem;
+  width: calc(100vw - var(--img-width));
+  box-sizing: border-box;
+  padding: 5rem 0 0 4rem;
+  font-size: 1.05rem;
+  overflow: scroll;
+  /* use v units & try using flex here &
+   use clamp here and make it responsive when resizing hori and vert*/
+}
+
+header>p {
+  line-height: 6;
+}
