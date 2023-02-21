@@ -261,6 +261,8 @@ a:hover {
     font-size: .9rem;
     text-align: center;
     padding-bottom: 0;
+    padding-left: 2vh;
+    padding-right: 2vh;
   }
 
   .inputs>div {
@@ -279,5 +281,9 @@ a:hover {
   form {
     position: relative;
     top: -6vh;
+  }
+
+  :root {
+    --gap: 0;
   }
 }
