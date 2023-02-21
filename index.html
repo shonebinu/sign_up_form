@@ -42,39 +42,41 @@
         <div class="inputs">
           <div>
             <div>
-              <label for="first-name">FIRST NAME</label>
-              <input type="text" name="first-name" id="first-name" required>
+              <label for="first-name">FIRST NAME*</label>
+              <input type="text" name="first-name" id="first-name" placeholder="Enter your first name" required>
             </div>
 
             <div>
-              <label for="last-name">LAST NAME</label>
-              <input type="text" name="last-name" id="last-name" required>
+              <label for="last-name">LAST NAME*</label>
+              <input type="text" name="last-name" id="last-name" placeholder="Enter your last name" required>
             </div>
           </div>
 
           <div>
             <div>
-              <label for="email">EMAIL</label>
-              <input type="email" name="email" id="email" required>
+              <label for="email">EMAIL*</label>
+              <input type="email" name="email" id="email" placeholder="Enter a valid email address" required>
             </div>
             <div>
-              <label for="number">PHONE NUMBER</label>
-              <input type="tel" name="phone" id="number" required>
+              <label for="number">PHONE NUMBER*</label>
+              <input type="tel" name="phone" id="number" pattern="[0-9]{10}" placeholder="Enter a 10-digit phone number"
+                required>
             </div>
           </div>
 
           <div>
             <div>
-              <label for="pass">PASSWORD</label>
-              <input type="password" name="pass" id="pass" required>
+              <label for="pass">PASSWORD*</label>
+              <input type="password" name="pass" id="pass" placeholder="Enter a super secure password" required>
+
             </div>
             <div>
-              <label for="conPass">CONFIRM PASSWORD</label>
-              <input type="password" name="conPass" id="conPass" required>
+              <label for="conPass">CONFIRM PASSWORD*</label>
+              <input type="password" name="conPass" id="conPass" placeholder="Confirm your password" required>
             </div>
           </div>
           <div class="button">
-            <button>Create Account</button>
+            <button type="submit" id="butt">Create Account</button>
           </div>
         </div>
         <p class="log">Already have an account? <strong> <a href="#"> Log In </a></strong></p>
