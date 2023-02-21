@@ -235,32 +235,49 @@ a:hover {
   #whiteleaves {
     width: 100%;
     min-height: unset;
-    height: 20vh;
-    position: relative;
-  }
-
-  #whiteleaves::before {
-    content: '';
+    height: 25vh;
     opacity: .5;
     background: linear-gradient(to bottom, transparent, var(--bg)),
       url("./images/kelly-sikkema-hSPVuakrJqs-unsplash.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
   }
 
   .logoContainer {
-    position: relative;
-    top: 3vh;
+    top: 2vh;
     background-color: unset;
   }
 
   .credit {
     display: none;
+  }
+
+  header {
+    width: 100%;
+    position: relative;
+    background-color: unset;
+    top: -7vh;
+    font-size: .9rem;
+    text-align: center;
+    padding-bottom: 0;
+  }
+
+  .inputs>div {
+    flex-direction: column;
+    gap: 3vw;
+  }
+
+  main {
+    align-items: center;
+  }
+
+  .inputs {
+    align-items: center;
+  }
+
+  form {
+    position: relative;
+    top: -6vh;
   }
 }
