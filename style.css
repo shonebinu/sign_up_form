@@ -65,6 +65,15 @@ a:visited {
   color: var(--font);
 }
 
+.shone:link,
+.shone:visited {
+  color: var(--green);
+}
+
+.shone:hover {
+  color: var(--red);
+}
+
 header {
   background-color: var(--sec-bg);
   width: calc(100vw - var(--img-width));
@@ -131,7 +140,7 @@ input:focus {
   border: 2px solid var(--green);
 }
 
-input:invalid {
+input:invalid:focus {
   border: 2px solid var(--red);
 }
 
