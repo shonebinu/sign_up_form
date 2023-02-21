@@ -30,6 +30,7 @@ body {
   opacity: .9;
   min-height: 100vh;
   width: var(--img-width);
+  position: relative;
 }
 
 .logoContainer {
@@ -68,10 +69,12 @@ header {
   background-color: var(--sec-bg);
   width: calc(100vw - var(--img-width));
   box-sizing: border-box;
-  font-size: 1rem;
+  font-size: .95rem;
   overflow: hidden;
   padding-left: var(--gap);
   padding-top: 7vh;
+  padding-right: 2vh;
+  padding-bottom: 2vh;
 }
 
 header>p {
