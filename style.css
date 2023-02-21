@@ -5,6 +5,7 @@
   --img-width: 35vw;
   --green: #86efac;
   --red: #fca5a5;
+  --gap: min(5vw, 5rem);
 }
 
 * {
@@ -16,7 +17,6 @@ body {
   display: flex;
   flex-direction: row;
   font-family: Poppins;
-  max-height: 100vh;
   max-width: 100vw;
   background-color: var(--bg);
   color: var(--font);
@@ -66,12 +66,12 @@ a:visited {
 
 header {
   background-color: var(--sec-bg);
-  height: min(18rem, 40vh);
   width: calc(100vw - var(--img-width));
   box-sizing: border-box;
-  padding: 8vh 1rem 0 4rem;
-  font-size: 1.05rem;
+  font-size: 1rem;
   overflow: hidden;
+  padding-left: var(--gap);
+  padding-top: 7vh;
 }
 
 header>p {
@@ -79,8 +79,8 @@ header>p {
 }
 
 .lets {
-  padding-left: 5rem;
-  padding-top: 2rem;
+  padding-left: var(--gap);
+  margin: 1rem 0 0 0;
 }
 
 .inputs>div>div {
@@ -90,7 +90,7 @@ header>p {
 }
 
 aside {
-  padding-left: 5rem;
+  padding-left: var(--gap);
   padding-top: 2rem;
 }
 
@@ -157,12 +157,18 @@ button:active {
   margin-top: 1.5rem;
   font-size: .9rem;
   font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 footer {
-  position: absolute;
-  bottom: 2vh;
-  padding-left: 5rem;
+  padding-bottom: 2vh;
+  padding-left: var(--gap);
   font-size: .8rem;
 }
 
