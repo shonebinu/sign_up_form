@@ -116,8 +116,9 @@ input {
   border-radius: 5px;
   height: 1.8rem;
   color: var(--font);
-  font-size: 1rem;
+  font-size: .9rem;
   padding-left: .5rem;
+  min-width: 15rem;
 }
 
 label {
@@ -189,4 +190,37 @@ footer {
 
 a:hover {
   color: var(--green);
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 975px) and (min-width: 540px) {
+
+  :root {
+    --gap: 0;
+  }
+
+  .inputs>div {
+    flex-direction: column;
+    gap: 3vw;
+  }
+
+  main {
+    align-items: center;
+  }
+
+  .inputs {
+    align-items: center;
+  }
+
+  header {
+    text-align: center;
+    padding-left: 2rem;
+  }
+
 }
