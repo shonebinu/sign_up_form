@@ -179,6 +179,5 @@ footer {
 }
 
 a:hover {
-  transition: .5s;
-  color: var(--red);
+  color: var(--green);
 }
