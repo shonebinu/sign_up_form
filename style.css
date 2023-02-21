@@ -3,6 +3,8 @@
   --font: #fafafa;
   --sec-bg: #262626;
   --img-width: 35vw;
+  --green: #86efac;
+  --red: #fca5a5;
 }
 
 * {
@@ -70,8 +72,6 @@ header {
   padding: 8vh 1rem 0 4rem;
   font-size: 1.05rem;
   overflow: hidden;
-  /* use v units & try using flex here &
-   use clamp here and make it responsive when resizing hori and vert*/
 }
 
 header>p {
@@ -105,4 +105,80 @@ aside {
   display: flex;
   flex-flow: row wrap;
   gap: 7vw;
+}
+
+input {
+  background-color: var(--bg);
+  border: 2px solid var(--sec-bg);
+  border-radius: 5px;
+  height: 1.8rem;
+  color: var(--font);
+  font-size: 1rem;
+  padding-left: .5rem;
+}
+
+label {
+  font-size: .9rem;
+  font-weight: 300;
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid var(--green);
+}
+
+input:invalid {
+  border: 2px solid var(--red);
+}
+
+button {
+  font-size: .9rem;
+  font-weight: 700;
+  background-color: var(--sec-bg);
+  color: var(--font);
+  padding: 1rem 2rem 1rem 2rem;
+  margin-top: 1.5rem;
+  border-radius: 12px;
+  border: 3px solid transparent;
+}
+
+button:hover {
+  background-color: var(--font);
+  color: var(--sec-bg);
+  transition: .3s;
+}
+
+button:active {
+  border: 3px solid var(--green);
+  transition: .1s;
+}
+
+.log {
+  margin-top: 1.5rem;
+  font-size: .9rem;
+  font-weight: 500;
+}
+
+footer {
+  position: absolute;
+  bottom: 2vh;
+  padding-left: 5rem;
+  font-size: .8rem;
+}
+
+.shone {
+  font-weight: 500;
+}
+
+.git {
+  margin-left: 5px;
+}
+
+.git:hover {
+  transform: rotate(30deg);
+}
+
+a:hover {
+  transition: .5s;
+  color: var(--red);
 }
