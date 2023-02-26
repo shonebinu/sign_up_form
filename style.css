@@ -27,7 +27,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: .9;
+  opacity: 0.9;
   min-height: 100vh;
   width: var(--img-width);
   position: relative;
@@ -57,7 +57,7 @@ h1 {
   display: flex;
   justify-content: center;
   width: var(--img-width);
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 a:link,
@@ -78,7 +78,7 @@ header {
   background-color: var(--sec-bg);
   width: calc(100vw - var(--img-width));
   box-sizing: border-box;
-  font-size: .95rem;
+  font-size: 0.95rem;
   overflow: hidden;
   padding-left: var(--gap);
   padding-top: 7vh;
@@ -86,7 +86,7 @@ header {
   padding-bottom: 2vh;
 }
 
-header>p {
+header > p {
   line-height: 6;
 }
 
@@ -95,7 +95,7 @@ header>p {
   margin: 1rem 0 0 0;
 }
 
-.inputs>div>div {
+.inputs > div > div {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -113,7 +113,7 @@ aside {
   align-items: flex-start;
 }
 
-.inputs>div {
+.inputs > div {
   display: flex;
   flex-flow: row wrap;
   gap: 7vw;
@@ -125,13 +125,13 @@ input {
   border-radius: 5px;
   height: 1.8rem;
   color: var(--font);
-  font-size: .9rem;
-  padding-left: .5rem;
+  font-size: 0.9rem;
+  padding-left: 0.5rem;
   min-width: 15rem;
 }
 
 label {
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-weight: 300;
 }
 
@@ -145,7 +145,7 @@ input:invalid:focus {
 }
 
 button {
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-weight: 700;
   background-color: var(--sec-bg);
   color: var(--font);
@@ -159,17 +159,17 @@ button {
 button:hover {
   background-color: var(--font);
   color: var(--sec-bg);
-  transition: .3s;
+  transition: 0.3s;
 }
 
 button:active {
-  transition: .1s;
+  transition: 0.1s;
   border: 3px solid #737373;
 }
 
 .log {
   margin-top: 1.5rem;
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-weight: 500;
   margin-bottom: 2rem;
 }
@@ -183,7 +183,7 @@ main {
 footer {
   padding-bottom: 2vh;
   padding-left: var(--gap);
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .shone {
@@ -202,21 +202,12 @@ a:hover {
   color: var(--green);
 }
 
-
-
-
-
-
-
-
-
 @media only screen and (max-width: 975px) and (min-width: 540px) {
-
   :root {
     --gap: 0;
   }
 
-  .inputs>div {
+  .inputs > div {
     flex-direction: column;
     gap: 3vw;
   }
@@ -233,10 +224,7 @@ a:hover {
     text-align: center;
     padding-left: 2rem;
   }
-
 }
-
-
 
 @media only screen and (max-width: 540px) {
   body {
@@ -247,7 +235,7 @@ a:hover {
     width: 100%;
     min-height: unset;
     height: 25vh;
-    opacity: .5;
+    opacity: 0.5;
     background: linear-gradient(to bottom, transparent, var(--bg)),
       url("./images/kelly-sikkema-hSPVuakrJqs-unsplash.jpg");
     background-size: cover;
@@ -269,14 +257,14 @@ a:hover {
     position: relative;
     background-color: unset;
     top: -6vh;
-    font-size: .9rem;
+    font-size: 0.9rem;
     text-align: center;
     padding-bottom: 0;
     padding-left: 2vh;
     padding-right: 2vh;
   }
 
-  .inputs>div {
+  .inputs > div {
     flex-direction: column;
     gap: 3vw;
   }
