@@ -10,23 +10,101 @@ body {
   flex-direction: row;
 
   img {
-    max-width: 100%;
+    width: 40vw;
     object-fit: cover;
   }
 
   main {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: #eee;
+    padding: 10vh 0;
+
+    >div,
+    form {
+      padding-left: 3rem;
+    }
+
+    >div:nth-child(1) {
+      margin-right: 10vw;
+    }
+
+    button {
+      background-color: #596D48;
+      color: white;
+      border: none;
+      padding: 1rem 2.5rem;
+      border-radius: 10px;
+      box-shadow: 5px 5px 5px #ddd;
+      font-size: 1.1rem;
+      font-weight: bold;
+      cursor: pointer;
+      margin-bottom: 1rem;
+    }
+
+    button:active {
+      outline: 1px solid green;
+    }
+
+    p:has(>.login) {
+      font-size: 1.1rem;
+    }
+
+    .login {
+      color: #596D48;
+      font-weight: bold;
+    }
 
     form {
       background-color: white;
-    }
+      box-shadow: 10px 5px 5px #ddd;
+      padding-top: 2vh;
+      padding-bottom: 3vh;
 
-    div,
-    form {
-      padding-left: 3rem;
+      label {
+        font-size: .95rem;
+      }
+
+      input {
+        display: block;
+        width: 15rem;
+        height: 2rem;
+        border-radius: 5px;
+        border: none;
+        outline: 1px solid #E5E7EB;
+        font-family: inherit;
+        font-size: 1rem;
+        padding-left: 7px;
+        margin-top: 5px;
+      }
+
+      input:focus {
+        outline: 1px solid blue;
+        box-shadow: 2px 5px 5px #ddd;
+      }
+
+      input:user-invalid {
+        outline: 1px solid red;
+      }
+
+      input[id="cpass"]+span {
+        position: relative;
+      }
+
+      input[id="cpass"]:user-invalid+span::after {
+        content: "* Passwords do not match";
+        position: absolute;
+        width: 15rem;
+        font-size: .8rem;
+        color: red;
+      }
+
+      .deskRow {
+        display: flex;
+        gap: 5vw;
+        margin-bottom: 3vh;
+      }
     }
   }
 }
