@@ -1,5 +1,9 @@
 # sign_up_form
 I worked again in this project and made a [clone](https://github.com/shonebinu/sign_up_form/tree/odin_clone) of the example given in the TOP project brief. 
+
+Switch the branch to `odin_clone` to see it.
+
+
  An easy 'sign up form' interface to learn about forms and validations. 
  [Sign Up Form Demo](https://shonebinu.github.io/sign_up_form/)
  
