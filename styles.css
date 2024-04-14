@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+
+  img {
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #eee;
+
+    form {
+      background-color: white;
+    }
+
+    div,
+    form {
+      padding-left: 3rem;
+    }
+  }
+}
