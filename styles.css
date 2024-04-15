@@ -19,6 +19,7 @@ body {
   figure {
     background-image: url("./assets/halie-west-25xggax4bSA-unsplash.jpg");
     width: 40vw;
+    /* could've used flex basis */
     object-fit: cover;
     margin: 0;
     position: relative;
